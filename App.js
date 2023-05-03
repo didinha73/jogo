@@ -1,16 +1,18 @@
 import { View, StyleSheet } from "react-native";
-
+import Icon from "react-native-vector-icons/Entypo"
 export default function App()
 {
     return (
         <View style={css.tela}>
             <View style={css.tabuleiro}>
+                <View style={css.casa}><Icon name="cross" size={95} ></Icon></View>
                 <View style={css.casa}></View>
                 <View style={css.casa}></View>
+
+                <View style={css.casa}><Icon name="circle" size={60}></Icon></View>
                 <View style={css.casa}></View>
                 <View style={css.casa}></View>
-                <View style={css.casa}></View>
-                <View style={css.casa}></View>
+
                 <View style={css.casa}></View>
                 <View style={css.casa}></View>
                 <View style={css.casa}></View>
@@ -33,7 +35,6 @@ const css = StyleSheet.create({
     tabuleiro: {
         width: 300,
         height: 300,
-        backgroundColor: "blue",
         flexWrap: "wrap"
     },
     casa: {
@@ -41,6 +42,8 @@ const css = StyleSheet.create({
         width: 100,
         borderColor: "black",
         borderStyle: "solid",
-        borderWidth: 1
+        borderWidth: 1,
+        justifyContent: "center",
+        alignItems: "center"
     }
 });
