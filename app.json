@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "jogo",
-    "slug": "jogo",
+    "slug": "jogo-da-velha",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.didinha73.jogodavelha"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cb62298e-9022-4e9c-9908-ab4ffb34005c"
+      }
+    },
+    "owner": "didinha73"
   }
 }
