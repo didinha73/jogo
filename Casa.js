@@ -2,13 +2,21 @@ import { useState } from "react"
 import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
 import Icon from "react-native-vector-icons/Entypo"
 
-export default function Casa()
+export default function Casa(props)
 {
     const [jogador, setJogador] = useState(null);
 
+
     function jogada()
     {
-        setJogador(1)
+        setJogador(props.turno);
+
+        let novo = props.tabuleiro;
+        novo[props.posicao] = props.turno;
+
+        props.gravar(novo);
+
+        props.alternar();
     }
     let icone = "";
 
